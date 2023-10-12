@@ -1,0 +1,19 @@
+@keyframes slider {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .parenthead {
+    white-space: nowrap;
+    display: inline-block;
+
+  }
+  
+  .childhead {
+    animation: slider 10s linear infinite;
+  }
+  

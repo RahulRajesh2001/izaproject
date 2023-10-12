@@ -1,0 +1,38 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden; /* Hide the horizontal scroll bar */
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.3s ease; /* Add a smooth sliding transition */
+  }
+  
+  .carousel-item {
+    flex: 0 0 300px;
+    height: 500px;
+    margin-right: 10px; /* Add some spacing between items */
+  }
+  
+  /* Add additional styles for left and right navigation buttons if needed */
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Adjust the margin as needed */
+  }
+  
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: grey; /* Color of inactive dots */
+    margin: 0 5px; /* Adjust the spacing as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-dot.active {
+    background-color: black; /* Color of the active dot */
+  }
+  

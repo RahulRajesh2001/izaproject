@@ -1,0 +1,13 @@
+/* styles.css */
+.disappearing-div {
+  opacity: 1;
+  background-color: transparent;
+  transition: opacity 2s ease-in-out, background-color 1s ease-in-out; /* Adjust the transition duration here */
+}
+
+.disappearing-div.exit {
+  opacity: 0;
+  background-color: white;
+  transition: opacity 2s ease-in-out, background-color 1s ease-in-out; /* Adjust the transition duration here */
+  transition-duration: 2s;
+}

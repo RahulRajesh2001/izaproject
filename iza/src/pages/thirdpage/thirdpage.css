@@ -1,0 +1,35 @@
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes slide1 {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.parent {
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden; 
+}
+
+.child {
+    animation: 5s slide infinite linear;
+}
+
+.another{
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+}
+.anotherchild {
+    animation: 5s slide1 infinite linear;
+}
